@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const user = adminUser.value;
+        const user = adminUser.value.toLowerCase();  
         const password = adminPassword.value;
 
-        if (user === 'Admin' && password === '123456') {
+        if (user === 'admin' && password === '123456') {
             localStorage.setItem('isAdminLogged', 'true');
             window.location.href = 'admin-dashboard.html';
         } else {
