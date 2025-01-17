@@ -36,9 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.editDonation = function(index) {
         const donations = getDonations();
         const donation = donations[index];
-
-        const newAmount = prompt(`Editar valor da doação de ${donation.name}`, donation.amount);
-        if (newAmount !== null) {
+    
+        let newAmount = prompt(`Editar valor da doação de ${donation.name}`, donation.amount);
+    
+        while (newAmount !== null && isNaN(newAmount) || newAmount.trim() === '') {
+            newAmount = prompt("Por favor, insira um valor numérico válido para a doação:", donation.amount);
+        }
+    
+        if (newAmount !== null && newAmount.trim() !== '') {
             donation.amount = newAmount;
             saveDonations(donations);
             displayDonations();
