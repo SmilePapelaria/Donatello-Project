@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculando o CSS Externo -->
+    <link rel="stylesheet" href="./css/stylea.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h3>Lista de Doações</h3>
-        <table class="table table-bordered mt-4">
-            <thead>
+    <div class="container">
+        <h3 class="text-center">Lista de Doações</h3>
+        <table class="table table-bordered shadow-sm">
+            <thead class="thead-light">
                 <tr>
                     <th>Nome</th>
                     <th>Email</th>
@@ -22,7 +24,9 @@
                 <!-- As doações serão listadas aqui -->
             </tbody>
         </table>
-        <button id="logout-btn" class="btn btn-danger mt-4">Sair</button>
+        <div class="d-flex justify-content-end">
+            <button id="logout-btn" class="btn btn-custom btn-lg mt-4">Sair</button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
