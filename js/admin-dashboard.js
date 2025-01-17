@@ -25,8 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${donation.email}</td>
                 <td>${donation.amount} €</td>
                 <td>
-                    <button class="btn btn-warning btn-sm" onclick="editDonation(${index})">Editar</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteDonation(${index})">Excluir</button>
+                    <button class="btn btn-sm btn-warning" onclick="editDonation(0)">
+                        <i class="fas fa-edit"></i> Editar
+                    </button>
+                    <button class="btn btn-sm btn-danger" onclick="removeDonation(0)">
+                        <i class="fas fa-trash-alt"></i> Remover
+                    </button>
                 </td>
             `;
             donationsList.appendChild(row);
