@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="btn btn-sm btn-warning" onclick="editDonation(${index})">
                         <i class="fas fa-edit"></i> Editar
                     </button>
-                    <button class="btn btn-sm btn-danger" onclick="removeDonation(${index})">
+                    <button class="btn btn-sm btn-danger" onclick="deleteDonation(${index})">
                         <i class="fas fa-trash-alt"></i> Remover
                     </button>
                 </td>
