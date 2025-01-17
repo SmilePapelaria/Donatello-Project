@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             row.innerHTML = `
                 <td>${donation.name}</td>
                 <td>${donation.email}</td>
-                <td>${donation.amount}</td>
+                <td>${donation.amount} €</td>
                 <td>
                     <button class="btn btn-warning btn-sm" onclick="editDonation(${index})">Editar</button>
                     <button class="btn btn-danger btn-sm" onclick="deleteDonation(${index})">Excluir</button>
