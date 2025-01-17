@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${donation.email}</td>
                 <td>${donation.amount} €</td>
                 <td>
-                    <button class="btn btn-sm btn-warning" onclick="editDonation(0)">
+                    <button class="btn btn-sm btn-warning" onclick="editDonation(${index})">
                         <i class="fas fa-edit"></i> Editar
                     </button>
-                    <button class="btn btn-sm btn-danger" onclick="removeDonation(0)">
+                    <button class="btn btn-sm btn-danger" onclick="removeDonation(${index})">
                         <i class="fas fa-trash-alt"></i> Remover
                     </button>
                 </td>
